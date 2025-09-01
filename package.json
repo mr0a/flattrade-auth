@@ -1,0 +1,61 @@
+{
+  "name": "flattrade-auth",
+  "version": "1.0.0",
+  "description": "Authentication library for Flattrade API integration",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "test": "jest",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "exports": {
+    ".": {
+      "bun": "./dist/index.mjs",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "keywords": [
+    "flattrade",
+    "auth",
+    "authentication",
+    "trading",
+    "api",
+    "stock-market",
+    "broker"
+  ],
+  "author": "mr0a",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mr0a/flattrade-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mr0a/flattrade-auth/issues"
+  },
+  "homepage": "https://github.com/mr0a/flattrade-auth#readme",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.6.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "otplib": "^12.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "bun": ">=1.0.0"
+  }
+}
