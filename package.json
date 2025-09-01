@@ -1,6 +1,6 @@
 {
   "name": "flattrade-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Authentication library for Flattrade API integration",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
